@@ -1,37 +1,24 @@
 public class JogoCowboy {
 
-            String nome;
-            int vidas;
-            String poder;
-            String cor; 
-            int moedas;
-            int tempo; 
-            
+         
     public static void main(String[] args) {
-     }
-        public void pular (){
-        }
+    System.out.println("Bem-vindo ao Jogo Cowboy!");
+  }
 
-        public void andar (){
-        }
+  public static void iniciarJogo() {
+    System.out.println("Iniciando o jogo...");
 
-        public void correr (){
-        }
+        Pistoleito cowboy = new Pistoleito("Cowboy", 6, "Marrom", 0, 3.0);
+        cowboy.exibirStatus();
+        cowboy.andar("frente");
+        cowboy.pular("direita");
+        cowboy.atirar();
+        cowboy.pontuar(10);
+        cowboy.tomarDano();
+        cowboy.exibirStatus(); 
+        System.out.println("Fim do jogo!");
 
-        public void tomarDano (){
-        }
-
-        public void pisar (){
-        }
-
-        public void atirar (){
-        }
-
-        public void ganharMoeda (){
-        }
-
-        public void morrer (){
-        }
-
+        cowboy.exibirStatus();
+    }
 }
 
